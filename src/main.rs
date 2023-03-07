@@ -4,6 +4,6 @@ fn main() {
     let headlines = get_headlines();
     match headlines {
         Ok(x) => render_headlines(&x),
-        Err(_) => (),
+        Err(e) => println!("{}", e),
     }
 }
